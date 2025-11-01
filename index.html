@@ -4,9 +4,362 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bachata Week 2026, in Cádiz, Spain</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BW Cádiz" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:title" content="Bachata Week 2026" />
+    <meta property="og:url" content="https://www.bachataweek.com/" />
+    <meta
+      property="og:image"
+      content="https://www.bachataweek.com/assets/img/cadiz-evening-poster.jpg"
+    />
+    <meta
+      property="og:description"
+      content="An unforgettable week of bachata with top dancers from all over the world. From 24 to 29 August 2026."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/animate.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style2025.css"
+      id="mainstyle"
+      type="text/css"
+      media="all"
+    />
+    <script>
+      function playVideo(e) {
+        e.play();
+        e.classList.remove("fading");
+        setTimeout(() => {
+          e.classList.add("fading");
+        }, (e.duration / e.playbackRate - 0.5) * 1000);
+      }
+    </script>
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="STFYNMBM"
+      defer
+    ></script>
   </head>
 
   <body id="index">
-    Hello there! Stay tuned.
+    <!-- Hero Section -->
+    <section id="hero" class="light">
+      <video
+        class="transition fading"
+        muted
+        autoplay
+        playsinline
+        onloadedmetadata="this.muted = true"
+        oncanplay="playVideo(this)"
+        onended="playVideo(this)"
+        width="1920"
+        preload="none"
+      >
+        <source src="assets/vid/cadiz-sunset.mp4" />
+      </video>
+      <div class="container">
+        <div class="hero-content text-center">
+          <a href="/">
+            <img
+              src="assets/img/bachata-week-logo.png"
+              alt="Bachata Week - Cádiz"
+              height="400"
+              width="800"
+            />
+          </a>
+          <svg style="display: none">
+            <filter id="glass-distortion">
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.001"
+                numOctaves="2"
+                result="noise"
+              />
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="37" />
+            </filter>
+          </svg>
+
+          <div class="hero-normal glass-card">
+            <div class="glass-filter"></div>
+            <div class="glass-overlay"></div>
+            <div class="glass-specular"></div>
+            <div class="glass-content">
+              <span
+                ><b>Bachata Week</b> will happen in the stunning
+                <i>Parador de Cádiz</i> from 24 to 29 August 2026. Applications
+                will open on 3 February 2026. <b>Sign up</b> to stay
+                informed!</span
+              ><br />
+              <div class="glass-card button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                  <a href="https://forms.gle/fcTHZat9QtwBmK4KA" class="myButton"
+                    >Sign up!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--          <div id="arrow">↓</div> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="section dark">
+      <div class="container">
+        <article
+          class="article-big animated hiding"
+          data-animation="fadeInUp"
+          data-delay="0"
+        >
+          <div class="icon-wrap"></div>
+          <h3>A unique bachata experience</h3>
+          <p class="h7">
+            Welcome to <b>Cádiz</b>, a magical city by the sea, full of
+            sunshine, music, and good vibes. Imagine golden beaches, warm
+            nights, and dancers from all over the world learning, growing, and
+            celebrating bachata together for one unforgettable week.
+          </p>
+          <p class="h7">
+            At <b>Bachata Week</b>, you’ll improve your technique, style,
+            musicality, and connection with some of the world’s top bachata
+            teachers and dancers. There’s time to train, but also time to dance
+            by the beach, enjoy the sunsets, and create lifelong memories with
+            old and new friends.
+          </p>
+          <p class="h7">
+            Every evening, we’ll have incredible parties that many describe as
+            the <b>best bachata socials in the world</b>. Dancers from over
+            fifty countries come together each year to share their love for
+            bachata, to connect, and to grow together — all in the city where
+            Bachata Sensual was born.
+          </p>
+          <p class="h7">
+            After more than ten years of creating Sensual Week,
+            <b>Yenny &amp; Andreas</b> continue the tradition with a fresh name,
+            <b>Bachata Week</b>, celebrating all bachata styles, from
+            traditional to sensual.
+          </p>
+          <p class="h7">
+            Pack your dance shoes and your swimsuit.
+            <b>Cádiz is waiting for you!</b>
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Artists Section -->
+    <section id="artists" class="section light">
+      <div class="container">
+        <article
+          class="article-big animated hiding"
+          data-animation="fadeInUp"
+          data-delay="0"
+        >
+          <h3>Top artists</h3>
+          <br />
+          <br />
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="100"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/luisandrea.jpg"
+                  class="img-responsive"
+                  alt="Andrea and Luis"
+                />
+              </div>
+              <div class="name">Andrea&nbsp;&amp;&nbsp;Luis</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="200"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/pabloraquel2.jpg"
+                  class="img-responsive"
+                  alt="Raquel and Pablo"
+                />
+              </div>
+              <div class="name">Raquel&nbsp;&amp;&nbsp;Pablo</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="300"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/irenetomas.jpg"
+                  class="img-responsive"
+                  alt="Irene and Tomas"
+                />
+              </div>
+              <div class="name">Irene&nbsp;&amp;&nbsp;Tomás</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="400"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/evelyn.jpg"
+                  class="img-responsive"
+                  alt="Evelyn"
+                />
+              </div>
+              <div class="name">Évelyn</div>
+            </div>
+          </div>
+          <!-- <div class="clearfix visible-xs"></div> -->
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="500"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/issamcharlott.jpg"
+                  class="img-responsive"
+                  alt="Charlott and Issam"
+                />
+              </div>
+              <div class="name">Charlott&nbsp;&amp;&nbsp;Issam</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="600"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/berrareyes.jpg"
+                  class="img-responsive"
+                  alt="Reyes and Berra"
+                />
+              </div>
+              <div class="name">Reyes&nbsp;&amp;&nbsp;Berra</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div
+              class="speaker-item animated hiding"
+              data-animation="fadeInUp"
+              data-delay="700"
+            >
+              <div class="img-wrapper">
+                <img
+                  src="assets/img/teacher/albaagustin.jpg"
+                  class="img-responsive"
+                  alt="Alba and Agustin"
+                />
+              </div>
+              <div class="name">Alba&nbsp;&amp;&nbsp;Agustin</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- End Artists Section -->
+
+    <!-- Hotel Section -->
+    <section id="hotel" class="section light">
+      <div class="overlay"></div>
+      <div class="container">
+        <article
+          class="article-big animated hiding"
+          data-animation="fadeInUp"
+          data-delay="0"
+        >
+          <h3>Location</h3>
+          <p class="h7">
+            Classes will be held in the beautiful
+            <b
+              ><a href="https://goo.gl/maps/iCEE3uyKWtJuNNNw8"
+                >Hotel Parador de Cádiz</a
+              ></b
+            >
+            in the historical centre, and most parties will take place in the
+            same location as well.
+          </p>
+          <p class="h7">
+            Accommodation is available at Hotel Parador as well as in Cádiz’s
+            historical centre, where you’ll find a wide range of hotels and
+            apartments, all within walking distance of the venue.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- End Hotel Section -->
+
+    <footer id="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Bachata Week |
+          <a href="privacy.html">Privacy policy</a> |
+          <a href="https://www.instagram.com/bachataweekcadiz/">Instagram</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery-2.1.0.min.js?ver=1"
+    ></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/waypoints-sticky.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
   </body>
 </html>
