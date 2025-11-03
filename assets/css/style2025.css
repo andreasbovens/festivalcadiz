@@ -1,5 +1,3 @@
-/* Sensual Week 2025 pared-down styles */
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -18,8 +16,8 @@ p {
 }
 
 h3 {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   font-size: 54px;
   margin: 10px 0 20px;
   text-transform: uppercase;
@@ -47,7 +45,7 @@ a:focus {
 }
 
 ::selection {
-  background-color: #94a298;
+  background-color: #ffd396;
   color: #fff;
 }
 
@@ -130,7 +128,7 @@ b {
   position: relative;
   overflow: hidden;
   min-height: 680px;
-  background: #feb13f center center / cover no-repeat;
+  background: #000 center center / cover no-repeat; /* #feb13f */
 }
 
 #hero video {
@@ -141,6 +139,7 @@ b {
   object-fit: cover;
   object-position: top;
   z-index: 0;
+  opacity: 0.8;
 }
 
 #hero .hero-content {
@@ -152,33 +151,36 @@ b {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes logoMove {
+/*@keyframes logoMove {
   from {
     transform: scale(0.8);
   }
   to {
     transform: scale(1);
   }
-}
+}*/
 
 #hero .hero-content img {
-  filter: drop-shadow(0 0 1rem #ffffff44);
-  animation-name: logoMove;
-  animation-duration: 10s;
+  filter: drop-shadow(0 0 1em #00000033);
+  /*  animation-name: logoMove;
+  animation-duration: 10s; */
   height: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
 }
 
 #hero .hero-normal {
   display: inline-block;
-  margin: 60px 0 40px 0;
+  margin: 30px 0 40px 0;
   padding: 20px;
   max-width: 600px;
   font-size: 22px;
   font-weight: 300;
   color: #fff;
   text-shadow: none;
+  font-size: 18px;
 }
 
 /* Glass Card Container from https://snipzy.dev/snippets/liquid-glass-card.html */
