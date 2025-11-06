@@ -362,7 +362,8 @@ b {
   padding-bottom: 50px;
 }
 
-#artists .img-wrapper img {
+#artists .img-wrapper img,
+#artists .coming-soon {
   display: block;
   margin: 0 auto;
   border-radius: 20px;
@@ -371,6 +372,11 @@ b {
   border-top: 1px solid #ffffff66;
   border-left: 1px solid #ffffff66;
   transition: 0.2s all ease-in-out;
+}
+
+#artists .coming-soon {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 #artists .img-wrapper img:hover {
