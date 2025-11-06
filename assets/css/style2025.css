@@ -182,10 +182,10 @@ b {
   animation-duration: 10s; */
   height: auto;
   width: 100%;
-  max-width: 400px;
-  max-height: 42vh;
+  max-width: 480px;
+  max-height: 50vh;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   z-index: 20 !important;
 }
 
