@@ -326,6 +326,16 @@ b {
   transform: scale(1.1);
 }
 
+#about ul {
+  padding-left: 0;
+}
+
+@media (min-width: 767px) {
+  #about ul {
+    padding-left: 3em;
+  }
+}
+
 #about ul li {
   list-style-type: none;
 }
