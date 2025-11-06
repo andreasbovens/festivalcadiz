@@ -128,7 +128,7 @@ b {
   position: relative;
   overflow: hidden;
   min-height: 680px;
-  background: #000 center center / cover no-repeat; /* #feb13f */
+  background-color: #000;
 }
 
 #hero video {
@@ -143,12 +143,28 @@ b {
 }
 
 #hero .hero-content {
+  color: #fff;
   left: 0;
   right: 0;
-  margin: 60px 2vw 0 2vw;
+  margin: 30px 2vw 0 2vw;
   z-index: 1;
   text-align: center;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  position: relative; /* this is a must have, otherwise the colours are half transparent */
+}
+
+.top-message {
+  border-top: 1px solid #ffffff66;
+  border-left: 1px solid #ffffff66;
+  backdrop-filter: blur(2px);
+  background-color: #fff3;
+  border-radius: 20px;
+  padding: 0.2em 1em;
+  width: fit-content;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 /*@keyframes logoMove {
@@ -166,15 +182,17 @@ b {
   animation-duration: 10s; */
   height: auto;
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
+  max-height: 42vh;
   display: block;
   margin: 0 auto;
+  z-index: 20 !important;
 }
 
 #hero .hero-normal {
   display: inline-block;
   margin: 30px 0 40px 0;
-  padding: 20px;
+  padding: 15px;
   max-width: 600px;
   font-size: 22px;
   font-weight: 300;
@@ -269,12 +287,13 @@ b {
   opacity: 0.8;
 }
 
-#hero .hero-normal span {
-  display: inline;
+#hero .hero-normal p {
+  display: block;
   color: #fff;
   padding: 2px 4px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  font-size: 1em;
 }
 
 #hero .hero-normal a {
@@ -299,42 +318,16 @@ b {
 .button a {
   text-decoration: none;
 }
-
-/*.myButton {
-  display: inline-block;
-  margin: 15px;
-  padding: 14px 27px;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(to bottom, #feac75 5%, #f49764 100%);
-  border-radius: 6px;
-  border: 1px solid #fa8e46;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(14, 11, 8, 0.47);
-  cursor: pointer;
+.button {
+  transition: transform 0.1s ease-in-out;
 }
 
-.myButton:hover,
-.myButton:focus {
-  color: #fff;
-  text-decoration: none;
-  background: linear-gradient(to bottom, #f49764 5%, #feac75 100%);
+.button:hover {
+  transform: scale(1.1);
 }
 
-.myButton:active {
-  position: relative;
-  top: 1px;
-}*/
-
-#about img {
-  float: right;
-  width: 20vw;
-  min-width: 200px;
-  border: 10px solid #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  rotate: 1deg;
-  margin: 1em;
+#about ul li {
+  list-style-type: none;
 }
 
 #artists {
@@ -425,17 +418,6 @@ b {
   }
 }
 
-@media (max-width: 991px) {
-  #hero .hero-content {
-    top: 40px;
-  }
-
-  #hero .hero-normal {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 767px) {
   h3 {
     font-size: 40px;
@@ -449,17 +431,9 @@ b {
     min-height: 520px;
   }
 
-  #hero .hero-content {
-    top: 30px;
-  }
-
   #hero .hero-normal {
     font-size: 18px;
     padding: 12px;
-  }
-
-  #hero .hero-content > a svg {
-    width: 90vw;
   }
 
   #hotel,
@@ -470,7 +444,7 @@ b {
 
 @media (max-width: 480px) {
   #hero .hero-normal {
-    font-size: 17px;
+    font-size: 15px;
     margin: 10px 0 20px;
   }
 
