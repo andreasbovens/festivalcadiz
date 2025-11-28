@@ -17,14 +17,14 @@ p {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 54px;
+  font-weight: 300;
+  font-size: 42px;
   margin: 10px 0 20px;
   text-transform: uppercase;
 }
 
 .h7 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 10px 0;
   font-weight: 300;
@@ -50,7 +50,7 @@ a:focus {
 }
 
 b {
-  color: #d7874d;
+  
   font-weight: normal;
 }
 
@@ -88,8 +88,8 @@ b {
 .overlay {
   position: absolute;
   inset: 0;
-  background: #2e3946;
-  opacity: 0.7;
+  background: #111a19;
+  opacity: 1;
   z-index: 0;
 }
 
@@ -345,11 +345,11 @@ b {
   background-repeat: repeat;
   background-position: center;
   background-size: 100px 100px;
-  background: #e6d3ae;
+  background: #111a19;
   background: linear-gradient(
     180deg,
-    rgba(230, 211, 174, 1) 0%,
-    rgba(148, 162, 152, 1) 100%
+    #111a19 0%,
+    #809076 100%
   );
   border-top: 2px solid #ffffff;
 }
@@ -406,7 +406,7 @@ b {
 
 #hotel .overlay,
 #organizers .overlay {
-  background: rgba(46, 57, 70, 0.8);
+  background: #284139aa;
 }
 
 #application ul {
@@ -414,10 +414,21 @@ b {
 }
 
 #arrow {
-  font-size: 40px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-weight: normal;
+  animation: arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 #footer {
@@ -440,7 +451,7 @@ b {
   }
 
   .h7 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #hero {
