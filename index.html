@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -53,9 +53,12 @@
       function playVideo(e) {
         e.play();
         e.classList.remove("fading");
-        setTimeout(() => {
-          e.classList.add("fading");
-        }, (e.duration / e.playbackRate - 0.5) * 1000);
+        setTimeout(
+          () => {
+            e.classList.add("fading");
+          },
+          (e.duration / e.playbackRate - 0.5) * 1000,
+        );
       }
     </script>
     <script
@@ -110,18 +113,18 @@
             <div class="glass-overlay"></div>
             <div class="glass-specular"></div>
             <div class="glass-content">
-              <p>A week of quality learning and unforgettable memories.</p>
-              <p>Applications open on <b>3 February 2026</b>.</p>
+              <p>A <b>premium bachata experience</b> with top artists.</p>
+              <p>Participation by video application only.</p>
               <div class="glass-card button">
                 <div class="glass-filter"></div>
                 <div class="glass-overlay"></div>
                 <div class="glass-specular"></div>
                 <div class="glass-content">
                   <a
-                    href="https://forms.gle/fcTHZat9QtwBmK4KA"
+                    href="https://forms.gle/9x1yyL3XbUDP8gEFA"
                     class="myButton"
-                    onclick="fathom.trackEvent('sign up button click');"
-                    >I am interested</a
+                    onclick="fathom.trackEvent('register button click')"
+                    >Apply now</a
                   >
                 </div>
               </div>
@@ -156,9 +159,9 @@
             If you want
             <b>
               mastery, clean technique, deeper connection, better musicality,
-              confidence, and a week that fills you with inspiration,
-              friendships and growth… this is for you!
-            </b>
+              confidence</b
+            >, and a week that fills you with
+            <b>inspiration, friendships and growth</b>… this is for you!
           </p>
         </article>
       </div>
@@ -439,7 +442,7 @@
           </ul>
           <p class="h7">
             <b>Price: €440</b>
-            (€220 deposit to secure your place · €220 payable later)
+            (Payment can be done in four instalments of €110.)
           </p>
         </article>
       </div>
@@ -457,18 +460,27 @@
           <div class="icon-wrap"></div>
           <h3>How to join?</h3>
           <p class="h7">
-            Admission is through a <b>video application</b>, which helps us
-            place you in the right small group and match you with the focus
-            where you’ll grow the most:
+            Admission is through a <b>video application</b>. First, we’ll do an
+            initial pass of the video applications and if you’re selected, we’ll
+            send you an invite to purchase a pass and select your preferred
+            Focus Area:
           </p>
           <ul class="h7">
-            <li><b>Couple Technique</b> (partner dance)</li>
-            <li><b>Body Technique</b> (solo, movement &amp; style)</li>
+            <li>
+              <b>Couple Technique</b>: You work directly in partnerwork,
+              developing the mechanics that make your dancing feel comfortable,
+              controlled and musical.
+            </li>
+            <li>
+              <b>Body Technique</b>: You learn to move better individually, and
+              then apply those tools in partnerwork.
+            </li>
           </ul>
           <p class="h7">
-            <b>Applications open on 3 February</b>, and you'll get an initial
-            confirmation within weeks, so you can secure your spot and book your
-            holidays.
+            Once you’ve purchased your ticket, we’ll do a detailed review of
+            your video and you’ll be placed in a track best suited for your
+            learning. We review each video carefully to keep the level, balance,
+            and learning experience that makes this week special.
           </p>
           <p class="h7">
             <b><a href="faq.html">Check our FAQ</a></b> for more detailed
@@ -477,8 +489,8 @@
           <p class="h7">
             <b
               >Interested?
-              <a href="https://forms.gle/fcTHZat9QtwBmK4KA"
-                >Sign up for early updates!</a
+              <a href="https://forms.gle/9x1yyL3XbUDP8gEFA"
+                >Submit your video today!</a
               ></b
             >
           </p>
